@@ -1,0 +1,145 @@
+/* General container styling */
+.create-product .container,
+.edit-product .container,
+.delete-product .container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+.create-product h2,
+.edit-product h2,
+.delete-product h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* Form error message styles */
+.create-product .form__error-message,
+.edit-product .form__error-message,
+.delete-product .form__error-message {
+  color: red;
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Form styling */
+.create-product .form,
+.edit-product .form,
+.delete-product .form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.create-product .form input[type="text"],
+.edit-product .form input[type="text"],
+.delete-product .form input[type="text"],
+.create-product .form input[type="file"],
+.edit-product .form input[type="file"],
+.delete-product .form input[type="file"],
+.create-product .form select,
+.edit-product .form select,
+.delete-product .form select,
+.create-product .form textarea,
+.edit-product .form textarea,
+.delete-product .form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.create-product .form input[type="file"],
+.edit-product .form input[type="file"],
+.delete-product .form input[type="file"] {
+  padding: 5px;
+}
+
+.create-product .form select,
+.edit-product .form select,
+.delete-product .form select {
+  height: 40px;
+}
+
+.create-product .form textarea,
+.edit-product .form textarea,
+.delete-product .form textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+/* Quill editor styling */
+.ql-container {
+  height: 200px;
+}
+
+.ql-toolbar {
+  border-radius: 4px 4px 0 0;
+  border: 1px solid #ccc;
+}
+
+.ql-container {
+  border-radius: 0 0 4px 4px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* Button styles */
+.create-product .btn,
+.edit-product .btn,
+.delete-product .btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.create-product .btn.primary,
+.edit-product .btn.primary,
+.delete-product .btn.primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.create-product .btn.danger,
+.edit-product .btn.danger,
+.delete-product .btn.danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.create-product .btn.primary:hover,
+.edit-product .btn.primary:hover,
+.delete-product .btn.primary:hover,
+.create-product .btn.danger:hover,
+.edit-product .btn.danger:hover,
+.delete-product .btn.danger:hover {
+  opacity: 0.8;
+}
+
+/* Delete product confirmation */
+.delete-product .delete-confirmation {
+  text-align: center;
+}
+
+.delete-product .delete-confirmation p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.delete-product .delete-confirmation .btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
